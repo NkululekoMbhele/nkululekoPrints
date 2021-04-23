@@ -1,0 +1,507 @@
+/* ==================================================================
+                        Random Picture
+===================================================================== */
+
+.randomPicture {
+    height: 300px;
+    margin-top: 100px;
+}
+
+
+/* ==================================================================
+                        POSTERS
+===================================================================== */
+
+body {
+    background-color: #001d3d;
+}
+
+.posters {
+    margin-top: 30px;
+    height: fit-content;
+    background-color: #001d3d;
+}
+
+#poster-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 60px;
+    position: relative;
+}
+
+.title h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 600px;
+    height: 3px;
+    background-color: #FFD200;
+}
+
+.item {
+    float: left;
+    width: 250px;
+    margin: 10px 0 40px 20px;
+    height: 250px;
+    padding: 2px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item img {
+    margin-top: 5rem;
+    width: 250px;
+    margin-bottom: 15px;
+    height: 250px;
+    padding: 0px 0 0 20px;
+}
+
+.place-order {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.place-order a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.more {
+    background-color: #1f447f;
+    border: 1px solid #111;
+    color: #fff;
+    font-size: 12px;
+    margin: 10px 6px 2px 20px;
+    padding: 2px;
+}
+
+.more a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.order {
+    width: 110px;
+    background-color: #FFD200;
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.price {
+    background-color: gold;
+    border: 1px solid;
+    font-size: 15px;
+    margin: 1px;
+    padding: 2px;
+}
+
+.button {
+    background-color: #1f447f;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #1f447f;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button2 {
+    background-color: gold;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid gold;
+    color: #fff;
+    text-decoration: none;
+}
+
+button2 a {
+    background-color: #1f447f;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #1f447f;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button a {
+    background-color: #1f447f;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #1f447f;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/******** 700 *******/
+
+@media (max-width: 699px) {
+    .title {
+        margin: 20px 0px;
+    }
+    .title h1 {
+        color: #fff;
+        font-size: 25px;
+        position: relative;
+    }
+    .title h1::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 150px;
+        height: 3px;
+        background-color: #FFD200;
+    }
+    #poster-display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+    .button {
+        background-color: #1f447f;
+        padding: 10px;
+        width: 200px;
+        border: 1px solid #1f447f;
+        color: #fff;
+        text-decoration: none;
+    }
+    .item {
+        float: left;
+        width: 250px;
+        margin: 10px 0 40px 20px;
+        height: 250px;
+        padding: 2px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .item span img {
+        width: 200px;
+        padding: 5px;
+        height: auto;
+    }
+    .place-order {
+        background-color: gold;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .place-order a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .more {
+        background-color: #1f447f;
+        border: 1px solid #111;
+        color: #fff;
+        font-size: 12px;
+        margin: 10px 6px 2px 20px;
+        padding: 2px;
+    }
+    .more a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .order {
+        width: 120px;
+        background-color: #FFD200;
+        padding: 5px 10px;
+        border: none;
+        margin-bottom: 40px;
+        color: #fff;
+        border-radius: 3px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .price {
+        background-color: gold;
+        border: 1px solid;
+        font-size: 15px;
+        margin: 1px;
+        padding: 2px;
+    }
+}
+
+
+/* ==================================================================
+                        PLACE ORDER
+===================================================================== */
+
+#place-order {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#place-order h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: px;
+    margin-bottom: 15px;
+}
+
+#place-order h5 span {
+    color: rgb(255, 0, 0);
+}
+
+#place-order h5 {
+    color: #ddd;
+}
+
+.order-form input {
+    border-radius: 3px;
+    width: 200px;
+    padding: 4px;
+    margin: 10px 0;
+    outline: none;
+    font-size: .8rem;
+    color: #000;
+    position: relative;
+}
+
+.order-form textarea {
+    border-radius: 3px;
+    width: 200px;
+    padding: 4px;
+    margin: 10px 0;
+    outline: none;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.order-form {
+    color: #fff;
+}
+
+.order-button {
+    width: 120px;
+    padding: 8px 10px;
+    background-color: #FFD200;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* ==================================================================
+                        LOGIN FORM 
+===================================================================== */
+
+#main2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-color: #001d3d;
+    padding-bottom: 30px;
+    height: fit-content;
+    padding-top: 50px;
+}
+
+#main2 h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#main2 p a {
+    color: #FFD200;
+    font-weight: 500;
+}
+
+#main2 p {
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.errorMessage {
+    color: red;
+    position: absolute;
+    top: 80px;
+    left: 600px;
+}
+
+.successMessage {
+    color: green;
+    position: absolute;
+    top: 80px;
+    left: 600px;
+}
+
+.login-form input {
+    display: block;
+    border-radius: 3px;
+    width: 400px;
+    padding: 10px;
+    margin: 20px 0;
+    outline: none;
+    font-size: 1.2rem;
+    color: #000;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.login-form textarea {
+    display: block;
+    border-radius: 3px;
+    width: 400px;
+    padding: 10px;
+    margin: 20px 0;
+    outline: none;
+    font-size: 1.2rem;
+    color: #000;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+#login-button {
+    width: 150px;
+    background-color: #FFD200;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media (max-width: 699px) {
+    #main2 h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    #main2 p a {
+        color: #FFD200;
+        font-weight: 500;
+    }
+    #main2 p {
+        color: #fff;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .errorMessage {
+        color: red;
+        position: absolute;
+        top: 80px;
+        left: 600px;
+    }
+    .successMessage {
+        color: green;
+        position: absolute;
+        top: 80px;
+        left: 600px;
+    }
+    .login-form input {
+        display: block;
+        border-radius: 3px;
+        width: 250px;
+        padding: 10px;
+        margin: 20px 0;
+        outline: none;
+        font-size: .9rem;
+    }
+    #login-button {
+        width: 150px;
+    }
+}
+
+
+/* 
+=====================================================================
+                                     SIGN UP FORM 
+====================================================================== */
+
+
+/* 
+=====================================================================
+                                     TRACKING ORDER
+====================================================================== */
+
+#track-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-color: #001d3d;
+    padding-bottom: 30px;
+    height: fit-content;
+    padding-top: 80px;
+}
+
+#track-content h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    opacity: .8;
+    margin-bottom: -15px;
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+.track-table .orderNumber {
+    color: #fff;
+    margin: 10px;
+}
+
+.track-table .orderInput {
+    display: block;
+    border-radius: 1px;
+    padding: 5px;
+    margin: 20px 0;
+    outline: none;
+    font-size: .8rem;
+    color: #000;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+.track-table .trackButton {
+    width: 60px;
+    padding: 3px;
+    background-color: #FFD200;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* 
+=====================================================================
+                                     PRODUCT DETAILS
+====================================================================== */
+
+
+/* 
+=====================================================================
+                                     SIGN UP FORM 
+====================================================================== */
